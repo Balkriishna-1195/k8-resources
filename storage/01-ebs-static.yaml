@@ -10,7 +10,7 @@ spec:
   csi:
     driver: ebs.csi.aws.com
     fsType: ext4
-    volumeHandle: vol-071b27f852a50e4d4 #we need to replace as per volume created
+    volumeHandle: vol-008cf4d1acc6ea103 #we need to replace as per volume created
 ---
 apiVersion: v1
 kind: PersistentVolumeClaim
@@ -40,7 +40,7 @@ spec:
     - name: persistent-storage
       mountPath: /usr/share/nginx/html
   nodeSelector:
-    topology.kubernetes.io/zone: us-east-1c
+    topology.kubernetes.io/zone: us-east-1d
   volumes:
   - name: persistent-storage
     persistentVolumeClaim:
