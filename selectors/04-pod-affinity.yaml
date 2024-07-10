@@ -10,7 +10,7 @@ spec:
   - name: nginx
     image: nginx
     imagePullPolicy: Always  #keep this always
-----
+---
 
 apiVersion: v1
 kind: Pod
